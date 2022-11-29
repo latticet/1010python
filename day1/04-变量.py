@@ -17,7 +17,7 @@ print('BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
 # TODO 标识符(变量名，函数名，类名)
 """
 说明：python中所有带名字的对象，都叫做标识符。变量名，函数名，类名
-     在python中变量名一般都使用下划线的方式
+     在python中变量名一般都使用下划线的命名风格
 规范(必须遵循)：
     1. 由字母数字下划线（_）组成,不能以数字开头
     2. 区分大小写
