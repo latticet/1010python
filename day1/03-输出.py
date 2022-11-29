@@ -10,6 +10,8 @@ end: 输出的结尾符，默认是\n，\n就是换行
 作用：
 输出内容
 使用：
+编码风格：
+python官方编码规范：PEP8
 """
 # 输出多个内容
 print('python', 'mysql', 'linux', 'shell')
