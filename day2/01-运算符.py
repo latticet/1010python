@@ -66,3 +66,51 @@ print(num1 is num2)
 # is not  a is not b  判断a和b不是同一个内存地址，如果不是结果为True， 否则为False
 print(str1 is not str2)
 print(num1 is not num2)
+print('--' * 20)
+str3 = 'hello'
+str4 = 'hello'
+print(str3 is str4)  # True
+
+list1 = ['python', 'mysql', 100]
+list2 = ['python', 'mysql', 100]
+list3 = list1
+
+print(list1 is list2)  # False
+print('==' * 20)
+
+# TODO 逻辑运算符
+# 表达式：可以在一行写的代码
+# 逻辑运算符使用布尔类型进行运算
+# and  并且，and俩边表达式结果都为真，那么and表达式的结果为True，否则为False
+print(True and True)  # True
+print(False and True)  # False
+print('--' * 20)
+# or 或者，or俩边的表达式只要有一个是True，那么or表达式的结果就是True，否则就是False
+print(True or True)  # True
+print(False or True)  # True
+print(False or False)  # False
+print('--' * 20)
+
+# not 取反
+print(not True)  # False
+print(not False)  # True
+print('--' * 20)
+
+# 短路
+# 其他数据类型或者是表达式使用逻辑运算符
+# 其他数据类型转化为False：0 '' None [] {} ()
+# and
+print(1 and 2)  # 2
+print(2 and 1)  # 1
+print(0 and 1)  # 0
+print('hello' and '0')  # '0'
+print('hello' and 0)  # 0
+print('--' * 20)
+
+# or
+print(1 or 2)
+print(2 or 1)
+print(0 or 1)
+print('hello' or '0')
+print('hello' or 0)
+print(0 or 1)
