@@ -38,4 +38,23 @@ print(float(num1))
 # float
 print(float(bool1))
 print(float(bool2))
+print('==' * 20)
+
+# str()
+# 将其他数据类型转化为str
+# int
+num1 = 100
+print(str(num1))
+print(type(str(num1)))
+print('--' * 20)
+
+# float
+float1 = 10.1
+print(str(float1))
+
+# bool
+bool1 = True
+bool2 = False
+print(str(bool1))
+print(str(bool2))
 
