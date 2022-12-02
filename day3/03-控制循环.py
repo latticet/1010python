@@ -13,6 +13,7 @@ while i < 6:
     print(i)
     i += 1
 print('==' * 20)
+
 # TODO break
 # 退出整个循环（终止循环）
 i = 1
