@@ -18,7 +18,7 @@ list1 = ['python', 'mysql', 'shell', 'linux']
 # 可以通过索引获取列表中的元素
 # 索引获取元素值语法：
 """
-list[索引号]
+list[索引]
 """
 # 获取list1中的mysql
 print(list1[1])
