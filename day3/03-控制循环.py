@@ -3,7 +3,7 @@
 # TODO continue
 # 退出本次循环，下次循环继续
 # 循环5次
-"""
+""""""
 i = 1
 while i < 6:
     if i == 3:
@@ -12,7 +12,7 @@ while i < 6:
 
     print(i)
     i += 1
-"""
+print('==' * 20)
 # TODO break
 # 退出整个循环（终止循环）
 i = 1
@@ -21,4 +21,3 @@ while i < 6:
         break
     print(i)
     i += 1
-
