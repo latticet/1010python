@@ -8,6 +8,7 @@ list1.insert(-2, 'git')  # ['python', 'linux', 'git', 'mysql']
 print(list1)
 print('==' * 20)
 
+
 # TODO list.append(数据) 将整个数据追加到列表末尾
 list2 = ['python', 'mysql']
 list2.append('linux')
