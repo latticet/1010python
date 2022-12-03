@@ -44,5 +44,59 @@ print('--' * 20)
 dict1 = {'name': 'hello', 'age': 18}
 dict1.clear()
 print(dict1)
+print('==' * 20)
+
+# 字典查询
+# dict[key] 通过key过去对应的值，如果key不存在会报错
+dict1 = {'name': 'hello', 'age': 18}
+print(dict1['name'])
+print(dict1['age'])
+# print(dict1['addr'])
+print('--' * 20)
+
+# dict.get(key[, None]) 通过key获取对应的值.如果key不存在返回第二个参数的值，默认为None
+# key存在
+print(dict1.get('name'))
+print(dict1.get('age'))
+# key不存在
+print(dict1.get('addr'))  # None
+print(dict1.get('addr', '成都'))  # 成都
+print('--' * 20)
+
+# len(容器)  str, list, tuple, dict 获取容器长度
+print(len(dict1))
+print('--' * 20)
+
+
+dict1 = {'name': 'hello', 'age': 18}
+# 获取所有key  dict.keys()
+print(dict1.keys())
+# 获取所有value dict.values()
+print(dict1.values())
+# 获取所有key和value dict.items()
+print(dict1.items())
+print('--' * 20)
+
+# in 语句
+# 元素是否在容器中 是就是True 否就是False、
+# 语法： 元素 in 容器
+dict1 = {'name': 'hello', 'age': 18}
+# 查看key在不在字典中
+# 第一种
+print('name' in dict1.keys())
+# 第二种
+print('name' in dict1)
+# 查看value在不在字典中
+print('hello' in dict1.values())
+
+# list
+print('hello' in ['hello', 'good'])
+print('hello1' in ['hello', 'good'])
+
+
+
+
+
+
 
 
