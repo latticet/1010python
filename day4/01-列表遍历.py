@@ -24,6 +24,7 @@ for 临时变量 in 可迭代对象:
 说明：
 临时变量：可迭代对象中的元素
 """
+
 # list
 list1 = ['python', 'mysql', 'linux', 'shell']
 for item in list1:
