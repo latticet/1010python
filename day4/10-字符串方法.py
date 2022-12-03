@@ -24,6 +24,7 @@ print(str1.rsplit(',', 1))
 """
 
 # TODO 大小写转换
+"""
 str1 = 'hello'
 # str.upper()  转大写
 str2 = str1.upper()
@@ -33,5 +34,18 @@ print(str2.lower())
 # str.title() 单词首字母大写
 str3 = 'hello,good,fine'
 print(str3.title())
+"""
+
+# TODO 判断开头或结尾
+str1 = 'hello'
+# str.startswith('字符串')   是否以某字符串开始
+print(str1.startswith('he'))
+print(str1.startswith('ab'))
+print('--' * 20)
+
+
+# str.endswith('字符串')   是否以某字符串结尾
+print(str1.endswith('llo'))
+print(str1.endswith('llb'))
 
 
