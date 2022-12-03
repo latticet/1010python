@@ -22,6 +22,7 @@ print(type(dict3), type(dict4))
 1. 字典的结构是key-value形式
 2. 字典中的value可以存储任何数据类型且不唯一
 3. 字典中的key是唯一的。一般都写字符串。
+4. 字典是可变数据类型
 """
 
 dict5 = {'name': 'hello', 'name': 'good', (1, 2): '12'}
