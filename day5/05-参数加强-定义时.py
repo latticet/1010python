@@ -73,6 +73,7 @@ print('==' * 20)
 
 
 # 使用所有参数形式
+# 使用顺序：必填，*args, 默认参数, **kwargs
 def fn5(a, b, *args, aa=11, bb=12, **kwargs):
     print(a, b)
     print(args)
