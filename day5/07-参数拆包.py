@@ -21,5 +21,3 @@ dict1 = {
     'd': 4
 }
 print(add(**dict1))
-
-sum(1, 2)
