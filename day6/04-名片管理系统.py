@@ -14,43 +14,66 @@ cards = [
 4. 删除名片: 录入需要删除名片的姓名, 根据名字到名片盒子中查到对应的名片并删除.
 """
 cards = [
-    {'name': 'hello', 'tel': '123', 'job': 'ceo'}
+    {'name': 'hello1', 'tel': '123', 'job': 'ceo'},
+    {'name': 'hello2', 'tel': '123', 'job': 'ceo'},
+    {'name': 'hello3', 'tel': '123', 'job': 'ceo'}
 ]
 
-# 用户通过序号选择功能
-code = int(input('选择功能【1添加|2显示|3修改|4删除】：'))
-if code == 1:
-    # 添加名片
-    # 接收用户输入
-    name = input('name:')
-    tel = input('tel:')
-    job = input('job:')
-    # 构建字典
-    info = {'name': name, 'tel': tel, 'job': job}
-    # 添加到列表
-    cards.append(info)
-    print(cards)
-    print('添加成功')
-elif code == 2:
-    print('姓名\t手机号\t职位')\
-    # 遍历列表中的所有字典
-    for card in cards:
-        for value in card.values():
-            print(value, end='\t')
-        print()
-elif code == 3:
-    print('修改')
-elif code == 4:
-    # 通过姓名删除名片信息
-    # 接收要删除的姓名
-    name = input('姓名：')
-    # 遍历列表
-    for card in cards:
-        if card['name'] == name:
-            cards.remove(card)
-            print('删除成功')
-            break
+while True:
+    # 用户通过序号选择功能
+    code = input('选择功能【1添加|2显示|3修改|4删除】：')
+    if code == '1':
+        # 添加名片
+        # 接收用户输入
+        name = input('name:')
+        tel = input('tel:')
+        job = input('job:')
+        # 构建字典
+        info = {'name': name, 'tel': tel, 'job': job}
+        # 添加到列表
+        cards.append(info)
+        print('添加成功')
+    elif code == '2':
+        print('姓 名\t手机号\t职位')
+        # 遍历列表中的所有字典
+        for card in cards:
+            for value in card.values():
+                print(value, end='\t')
+            print()
+    elif code == '3':
+        # 修改
+        # 接收用户名
+        name = input('姓名：')
+        # 遍历列表
+        for card in cards:
+            # 根据用户名找到对应的dict
+            if card['name'] == name:
+                # 接收用户输入
+                name = input('name:')
+                tel = input('tel:')
+                job = input('job:')
+
+                # 设置内容
+                card['name'] = name
+                card['tel'] = tel
+                card['job'] = job
+                print('修改成功')
+                break
+        else:
+            print('姓名不存在')
+    elif code == '4':
+        # 通过姓名删除名片信息
+        # 接收要删除的姓名
+        name = input('姓名：')
+        # 遍历列表
+        for card in cards:
+            if card['name'] == name:
+                cards.remove(card)
+                print('删除成功')
+                break
+        else:
+            print('没有要删除的名片')
+    elif code == 'quit':
+        break
     else:
-        print('没有要删除的名片')
-else:
-    print('输入错误')
+        print('输入错误')
