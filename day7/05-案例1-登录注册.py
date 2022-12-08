@@ -17,6 +17,8 @@ elif code == '2':
 
     # 读取所有用户信息
     f = open('resource/userinfo.txt', 'r', encoding='utf8')
+    """
+    # 第一种：每次读取一行
     while True:
         line = f.readline()
         # 去掉每行中的换行
@@ -29,5 +31,19 @@ elif code == '2':
         if not line:
             print('登录失败')
             break
+    """
+
+    # 第二种：一次性读取所有行
+    lines = f.readlines()
+    for line in lines:
+        sys_user, sys_pass = line.rstrip('\n').split(',')
+        # 判断用户输入和系统中的用户信息是否匹配
+        if sys_user == username and sys_pass == password:
+            print('登录成功')
+            break
+    else:
+        print('用户名或者密码错误')
+
+    f.close()
 else:
     print('功能不存在')
