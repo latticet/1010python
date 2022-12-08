@@ -77,3 +77,9 @@ while True:
         break
     else:
         print('输入错误')
+
+# 作业
+# 名片管理系统-函数版
+
+''.replace('are', len('are')*'*')
+
