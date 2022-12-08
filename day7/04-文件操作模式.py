@@ -72,7 +72,7 @@ f = open('resource/demo5.txt', 'w+', encoding='utf8')
 # 写入内容
 f.write('你好')
 
-# 移动光标到最左边
+# 移动光标
 # 语法：f.seek(size)  size:距离左边的字节大小
 f.seek(3)
 
