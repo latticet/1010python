@@ -15,6 +15,7 @@ class Person:
     def set_name(self, name):
         self.name = name
 
+
 # 创建对象
 p1 = Person('aa', 11)
 print(p1.name)
