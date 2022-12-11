@@ -1,3 +1,6 @@
+"""
+单继承:一个类只继承一个父类
+"""
 # 父类
 class Staff:
     def __init__(self):
