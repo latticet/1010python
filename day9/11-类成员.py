@@ -19,7 +19,7 @@ class Person:
 
 # 类的外部
 # 获取类属性
-# 语法：类名.类属性名
+# 语法：类名.类属性名 | obj.类属性名
 print(Person.country)
 p1 = Person('hello', 18)
 print(p1.country)
@@ -64,9 +64,13 @@ class Person:
         print(cls)
         print(cls.country)
 
+    def obj_info(self):
+        print(self.country)
+
 
 
 # 类方法调用
 # print(Person)
 Person.info()
 # Person().info()
+Person().obj_info()
