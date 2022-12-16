@@ -59,21 +59,20 @@ class File:
         os.rename(source_filename, target_filename)
 
 
-"""
-# 写入文件
-File.write('demo.txt', '123\n456')
-# 读取内容
-print(File.read('demo.txt'))
-# 复制内容
-File.copy('demo.txt')
-# 修改文件名
-File.rename('demo.txt', 'mydemo.txt')
-# 删除文件
-File.del_file('mydemo.txt')
-"""
+if __name__ == '__main__':
+    # 写入文件
+    File.write('demo.txt', '123\n456')
+    # 读取内容
+    print(File.read('demo.txt'))
+    # 复制内容
+    File.copy('demo.txt')
+    # 修改文件名
+    File.rename('demo.txt', 'mydemo.txt')
+    # 删除文件
+    File.del_file('mydemo.txt')
+
 """
 __name__:
-第一种情况：如果当前文件以脚本方式运行，__name__的值是 __main__
-第二种方式：如果当前模块被导入方式运行，
+第一种情况【脚本方式】：如果当前文件以脚本方式运行，__name__的值是 __main__
+第二种方式【模块方式】：如果当前文件被导入方式运行，__name__的值是 模块名
 """
-print(__name__)
