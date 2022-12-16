@@ -1,0 +1,1 @@
+name = '我的random'
