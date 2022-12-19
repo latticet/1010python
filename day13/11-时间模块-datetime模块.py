@@ -1,5 +1,5 @@
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # TODO datetime类
 # # 类方法
@@ -53,7 +53,24 @@ print(type(time_obj))
 """
 
 # datetime.strftime(fmt)	按照fmt的格式将datetime时间，转化为字符串时间
+"""
 datetime_obj = datetime.now()
 datetime_str = datetime_obj.strftime('%Y-%d-%m %H%:%M:%S')
 print(datetime_str)
 print(type(datetime_str))
+"""
+
+# TODO timedelta类
+# 说明：时间单位对象
+# 作用：用来进行时间的计算
+
+datetime_obj = datetime.now()
+
+# 创建一个时间对象-2days
+days2 = timedelta(days=2)
+
+# 2天之前
+print(datetime_obj - days2)
+
+# 2天之后
+print(datetime_obj + days2)
