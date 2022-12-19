@@ -42,7 +42,24 @@ print(list1)
 """
 
 # random.sample(seq,k)		从序列中随机选择k个元素返回，原序列不变。
+"""
+list1 = ['linux', 'mysql', 'python', 'git', 'shell']
+print(random.sample(list1, 2))
+"""
+
+# random.seed(n=none)	初始化	初始化随机熵池。  种子数
+# 求随机数  ['苹果', '香蕉', '梨子']
+# 种子           结果
+# a               苹果
+# b               香蕉
+# a               苹果
+# c               梨子
+# b               香蕉
+
+random.seed(2)  # 种子数就是2
+print(random.randint(1, 10))
+
+random.seed(10)
 list1 = ['linux', 'mysql', 'python', 'git', 'shell']
 print(random.sample(list1, 2))
 
-# random.seed(n=none)	初始化	初始化随机熵池。
