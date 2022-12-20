@@ -90,5 +90,8 @@ print(re.search('h[^abc]', 'h&'))
 print(re.search('h[^abc]', 'hd'))
 print(re.search('h[^a-z]', 'h7'))
 print(re.search('h[^a-z]', 'hf'))
+print('--' * 20)
 
-
+# TODO  | 匹配|两边的内容
+print(re.search('hello|world', 'hello').group())
+print(re.search('hello|world', 'world').group())
