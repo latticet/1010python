@@ -75,6 +75,20 @@ print(re.search('h\w', 'h_').group())
 print(re.search('h\w', 'h你').group())
 print(re.search('h\w', 'h-'))
 print(re.search('h\w', 'h$'))
-
+print('--' * 20)
 
 # TODO \W 匹配特殊字符
+
+
+# TODO [^...]	不在[]中的字符：[^abc] 匹配除了a,b,c之外的字符。
+print(re.search('h[^abc]', 'ha'))
+print(re.search('h[^abc]', 'hb'))
+print(re.search('h[^abc]', 'hc'))
+print(re.search('h[^abc]', 'h-'))
+print(re.search('h[^abc]', 'h1'))
+print(re.search('h[^abc]', 'h&'))
+print(re.search('h[^abc]', 'hd'))
+print(re.search('h[^a-z]', 'h7'))
+print(re.search('h[^a-z]', 'hf'))
+
+
