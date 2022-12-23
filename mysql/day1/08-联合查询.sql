@@ -8,10 +8,10 @@ SELECT * FROM student WHERE stu_age > 30
 union all
 SELECT * FROM student WHERE stu_age < 30;
 
-
 SELECT stu_age FROM student WHERE stu_age > 30
 union all
 SELECT stu_age FROM student WHERE stu_age < 30;
+
 
 -- UNION 去重
 -- 只留下一个字段
