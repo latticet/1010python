@@ -1,3 +1,4 @@
+-- SELECT 字段列表 FROM 表名 [ WHERE 条件 ] GROUP BY 分组字段名 [ HAVING 分组后过滤条件 ];
 -- SELECT 字段列表 FROM 表名 GROUP BY 分组字段名
 -- 以class_id进行分组
 SELECT class_id FROM student GROUP BY class_id;
