@@ -5,6 +5,7 @@ import pymysql
 conn = pymysql.connect(user='root', password='root', database='advanced', charset='utf8')
 
 # 3. 获取游标对象
+# TODO 游标类型
 # 元组游标：cursor=pymysql.cursors.Cursor  【默认】
 # 字典游标：cursor=pymysql.cursors.DictCursor
 cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
