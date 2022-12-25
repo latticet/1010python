@@ -9,9 +9,8 @@ import pymysql
 # database: 指定要操作的数据库
 # charset:通信的字符集
 conn = pymysql.connect(host='localhost', port=3306,
-                user='root', password='root',
-                database='advanced', charset='utf8')
-
+                       user='root', password='root',
+                       database='advanced', charset='utf8')
 
 # TODO 3.获取游标对象
 cursor = conn.cursor()
