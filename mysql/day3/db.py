@@ -43,9 +43,18 @@ class DB:
         else:
             return rows, data
 
-    def write(self):
+    def write(self, sql, args=None):
         """写入操作"""
-        pass
+        try:
+            # 执行sql语句
+            rows = self.cursor.execute(sql, args)
+        except Exception as e:
+            print(e)
+            self.conn.rollback()
+            return 0
+        else:
+            self.conn.commit()
+            return rows
 
     def __del__(self):
         self.cursor.close()
@@ -54,4 +63,15 @@ class DB:
 
 if __name__ == '__main__':
     db = DB('root', 'root', 'advanced')
-    print(db.read('select * from student1'))
+
+    # 查询
+    print(db.read('select * from student where stu_name = %s', ['曹操']))
+
+    # 写入
+    rows = db.write('delete from student where stu_name = %s', ['李严'])
+    print(rows)
+
+    if rows:
+        print('OK')
+    else:
+        print('Fail')
