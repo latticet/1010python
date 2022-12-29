@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- 
+        form:定义表单
+            属性：
+                action: 指定表单提交的地址
+                method: 请求方式（get, post, patch, put, delete）
+        input：输入框
+        select：下拉框
+        textarea：多行文本
+    -->
+
+    <form>
+        <!-- input: type属性 -->
+        <!-- 文本框：type = 'text' -->
+        账号：<input type="text"><br>
+        <!-- 密码框：type = 'password' -->
+        密码：<input type="password"><br>
+        <!-- radio	单选	一组单选必需name相同 -->
+        <!-- checked: 默认选中 -->
+        性别：男<input type="radio" name="gender" checked="checked">  
+              女<input type="radio" name="gender"><br>
+        <!-- checkbox	多选	一组多选必需name相同 -->
+        爱好：唱歌<input type="checkbox" checked>
+              跳舞<input type="checkbox">
+              RAP<input type="checkbox"><br>
+        <!-- file	附件	可以选择文件进行提交 -->
+        头像：<input type="file"><br>
+        <!-- hidden	隐藏域	不显示控件；这个在以后做数据修改时会有用 -->
+        <input type="hidden" value="xxxxx"><br>
+
+        <!-- 按钮标签 -->
+        <!-- submit	提交按钮	点击后就提示表单 -->
+        <input type="submit" value="提交按钮"><br>
+
+        <!-- button	普通按钮	 -->
+        <input type="button" value="普通按钮">
+
+        <!-- reset	重置按钮	回到最初状态(注：不是清空) -->
+        <input type="reset"><br>
+
+        <!-- image	图片按钮	必需配合src属性来展示 -->
+        <input type="image" src="image/button.webp" width="60"><br>
+
+        <!-- 
+            select 下拉框
+                option 下拉选项
+            默认选择：属性selected
+         -->
+        区域：
+        <select>
+            <option value="1">北京</option>
+            <option value="2">上海</option>
+            <option value="3" selected="selected">重庆</option>
+            <option value="4">天津</option>
+        </select>
+        <!-- 
+            textarea:多行文本
+                属性：
+                    cols:列数
+                    rows:行数
+        -->
+        简介：
+        <textarea  cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
