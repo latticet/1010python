@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        /*类选择器  .class值*/
+        .red{   /*class=red的标签*/
+            color: red;
+        }
+        .size30{
+            font-size: 30px;
+        }
+
+        /*id选择器 #id值*/
+        #div1{  /*定位id=div1的标签*/
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        /* * 通配符 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*后代选择器  E1 E2 */
+        div span{  
+            color: aqua;
+        }
+        /* 子元素选择器  E1 > E2 */
+        #div2 > span{  /*id=div2标签下的子span标签*/
+            font-size: 50px;
+        }
+
+        div > span{
+            font-size: 30px;
+        }
+        span.span3{
+            color: chartreuse;
+        }
+
+        /*并集选择器 E1,E2,En*/
+        ul, li, div, span, p{
+            margin-left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    什么是选择器？
+    选择器就是定位标签的一种方式
+
+    - 基本选择器
+        - 标签选择器
+        - 类选择器: 在标签上添加class属性
+        - id选择器：在标签上添加id属性
+        - *: 通配符，所有标签
+    - 复合选择器
+        - 后代选择器 E1 E2
+        - 子元素选择器  E1 > E2
+        - 并集选择器  E1, E2, ...
+
+    选择器优先级：值越大优先级越高
+    标签：1
+    类选择器：10
+    id选择器：100
+    -->
+
+    <span class="red size30">span1</span>
+    <span class="size30">span2</span>
+    <p class="red">段落1</p>
+    <p class="size30">段落2</p>
+    <hr>
+
+    <!-- 页面中一般不能写重复的id -->
+    <div id="div1">div1</div>
+    <div>div2</div>
+    <hr>
+
+
+    <div id="div2">
+        <p>
+            <span>div-p-span</span>
+        </p>
+        <span>div-span</span>
+    </div>
+
+    <ul>
+        <li>
+            <span>ul-li-span</span>
+        </li>
+    </ul>
+
+    <span class="span3">独立的span3标签</span>
+    <span>独立的span4标签</span>
+    <p class="span3">这是一个新的段落</p>
+</body>
+</html>

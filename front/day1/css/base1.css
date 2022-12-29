@@ -1,0 +1,22 @@
+/*
+选择器{
+    样式名1:样式值1;
+    样式名2:样式值2;
+}
+*/
+
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;     /*1px宽，蓝色的直线边框*/
+}
+
+p{
+    font-size: 30px;
+    color: darkgreen;
+}
+
+span{
+    font-size: 40px;
+    color: forestgreen;
+}
