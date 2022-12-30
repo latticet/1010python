@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组</title>
+</head>
+<body>
+    <script>
+        // 定义数组
+        // 第一种：字面量方式【常用】
+        var arr1 = ['python', 'mysql', 'linux']
+
+        // 第二种：构造函数方式
+        var arr2 = new Array('python', 'mysql', 'linux')
+
+        // 空数组
+        var arr3 = []
+        var arr4 = new Array()
+
+        // 访问数组中的元素
+        // 语法：数组[下标]
+        // 下标(索引)
+        // 数组的下标从左至右从0开始
+        console.log(arr1[0])
+        console.log(arr1[1])
+        console.log(arr1[2])
+
+
+        // 数组长度
+        // 语法：数组.length
+        console.log(arr1.length)
+
+        
+        // 删除数组中的元素
+        // 语法： delete  数组[索引]
+        delete arr1[0]
+        console.log(arr1)
+
+
+        // 修改元素
+        // 语法：数组[索引] = value
+        arr1[0] = 'java'
+        arr1[1] = 'mssql'
+        console.log(arr1)
+
+        // 新增元素
+        // 语法：数组[索引] = value
+        var arr1 = ['python', 'mysql', 'linux']
+        arr1[3] = 'git'
+        console.log(arr1)
+
+        arr1[10] = 'shell'
+        console.log(arr1)
+        console.log('============================')
+
+        // 数组遍历
+        // for while
+        var arr1 = ['python', 'mysql', 'linux']
+        for(var i=0;i<arr1.length;i++){
+            console.log(arr1[i])
+        }
+        console.log('========================')
+
+        // for in 
+        /*
+        语法：
+        for(索引 in 数组){
+            循环体
+        }
+        */
+        for(i in arr1){
+            console.log(arr1[i])
+        }
+    </script>
+</body>
+</html>
