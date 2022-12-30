@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分支语句</title>
+</head>
+<body>
+    <script>
+        // 流程控制
+        /*
+        顺序执行
+        分支语句
+        循环语句
+        */
+        // 需要掌握：语法和执行流程
+        // 单分支
+        /*
+        语法：
+        if(条件表达式){
+            代码块
+        }
+        */
+        if(2 > 1){
+            console.log('ok')
+        }
+
+        // 双分支
+        /*
+        语法：
+        if(条件表达式){
+            条件成立执行的代码块
+        }else{
+            条件部成立执行的代码块
+        }
+        */
+        if(2 > 20){
+            console.log(2)
+        }else{
+            console.log(20)
+        }
+
+        // 多分支
+        /*
+        语法：
+        if(条件1){
+            条件1成立执行的代码块
+        }else if(条件2){
+            条件2成立执行的代码块
+        }else{
+            上面条件都不成立执行的代码块
+        }
+        */
+        var score = 60
+        if(score >= 90){
+            console.log('A')
+        }else if(score >= 80){
+            console.log('B')
+        }else if (score >= 60){
+            console.log('C')
+        }else{
+            console.log('D')
+        }
+
+    </script>
+</body>
+</html>
