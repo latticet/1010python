@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型</title>
+</head>
+<body>
+    <script>
+        /*
+        基本数据类型：
+            number(数字)、string(字符串)、boolean(布尔型)、undefined(未定义)、null(空)
+        引用数据类型：
+            Array（数组）、Function（函数）、Object（对象）
+        */
+        // typeof() : 查看数据类型
+        // number
+        console.log(typeof(100))
+        console.log(typeof(1.1))
+        // string
+        console.log(typeof('hello'))
+        console.log(typeof("hello"))
+        // boolean
+        console.log(typeof(true))
+        console.log(typeof(false))
+        // undefined
+        var un1
+        var un2 = undefined
+        console.log(typeof(un1))
+        console.log(typeof(un2))
+        // null 空对象
+        console.log(typeof(null))
+
+
+        // 数组
+        arr1 = [1, 2, 3]
+        console.log(typeof(arr1))
+        // 函数
+        function fn(){
+            // 函数体
+        }
+        console.log(typeof(fn))
+        // 对象
+        obj1 = {name:'刘毅杰', age:18}
+        console.log(typeof(obj1))
+
+
+
+    </script>
+</body>
+</html>
