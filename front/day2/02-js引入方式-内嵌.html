@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内嵌（行内）js</title>
+</head>
+<body>
+    <!-- 
+        js引入方式：
+        1. 行内js：直接把js通过事件绑定写在标签上。【现在基本不用】
+        2. 内部js
+        3. 外部js
+    -->
+    <!-- onclick:点击事件 -->
+    <!-- <标签 事件="js代码"> -->
+    <input type="button" value="点击" onclick="alert('按钮被点击了')">
+    <!-- onfocus:焦点获取事件 -->
+    <!-- onblur: 焦点离失事件 -->
+    <input type="text" onfocus="alert('获得焦点了')">
+
+</body>
+</html>
