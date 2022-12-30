@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+</head>
+<body>
+    <script>
+        // 函数基础
+        // 定义
+        /*
+        function 函数名(){
+            函数体
+        }
+        */
+        function fn(){
+            console.log('hello world')
+        }
+        // 调用
+        /*
+        函数名()
+        */
+        fn()
+
+
+        // 函数参数
+        // 定义时的参数：形参 （必填参数，默认参数）
+        // 调用时的参数：实参  (位置传参，关键字传参)
+        function add(a, b, c=3){
+            console.log(a + b + c)
+        }
+
+        add(1, 2, c=4)
+        console.log('======================')
+
+        // 函数可以传入任意多个实参，会被收集在一个叫做arguments的变量中
+        function demo(){
+            console.log(arguments)   // arguments:数组
+        }
+
+        demo(1, 'hello', 10.1, 'good')
+        console.log('======================')
+
+
+        // 函数返回
+        // return 返回的表达式
+        // 特点：return后面代码不执行， 只能返回一个值
+        function demo2(){
+            return 1 + 2
+        }
+
+
+        result = demo2()
+        console.log(result)
+    </script>
+</body>
+</html>
