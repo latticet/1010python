@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匿名函数</title>
+</head>
+<body>
+    <script>
+        var fn1 = function(){
+            console.log('fn1')
+        }
+
+        fn1()
+        console.log('======================')
+
+        // 匿名函数自调用
+        !function(){
+            console.log('匿名函数1')
+        }()
+
+        +function(){
+            console.log('匿名函数2')
+        }()
+
+        -function(){
+            console.log('匿名函数3')
+        }()
+
+        %function(){
+            console.log('匿名函数4')
+        }()
+    </script>
+</body>
+</html>
