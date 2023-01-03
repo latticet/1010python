@@ -68,11 +68,14 @@ for element in driver.find_elements_by_xpath('//h1'):
     print(element.get_attribute('outerHTML'))
 print('==' * 20)
 
-# //div/h1
+# .. 上级节点
+# //li/..
 
-
-# ul
-# li
+# @ 选取属性
+# 标签名[@属性名]  定位当前页面中的叫做这个属性名的标签
+# 标签名[@属性名=value]  定位当前页面中的属性=value的标签
+# 标签名[@class]
+# 标签名[@class='l2']
 
 
 
