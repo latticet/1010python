@@ -12,6 +12,7 @@ time.sleep(1)
 # 在搜索框输入-天气预报
 kw = driver.find_element_by_id('kw')
 
+
 kw.send_keys('天气预报')
 time.sleep(1)
 
