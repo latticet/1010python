@@ -7,7 +7,7 @@ options = webdriver.ChromeOptions()
 download_path = os.path.abspath('download')
 prefs = {
     'profile.default_content_settings.popups': 0,  # 取消弹窗
-    'download.default_directory': download_path  # 设置保存位置
+    'download.default_directory': download_path    # 设置保存位置
 }
 options.add_experimental_option('prefs', prefs)
 
