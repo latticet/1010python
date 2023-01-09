@@ -3,6 +3,7 @@ from selenium.common.exceptions import InvalidArgumentException, WebDriverExcept
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+import time
 
 """
 作用：对selenium进行二次封装，供page包中的类继承
@@ -34,6 +35,7 @@ class Base:
         # 请求目标网址
         try:
             self.driver.get(url)
+            self.driver.implicitly_wait(5)
         except (InvalidArgumentException, WebDriverException) as e:
             print(e)
 
@@ -65,6 +67,26 @@ class Base:
         except TimeoutException as e:
             print(e)
             return []
+
+    def send_keys(self, locator, content):
+        """表单域输入内容"""
+        element = self.find_element(locator)
+        if element:
+            element.send_keys(content)
+
+    def click(self, locator):
+        element = self.find_element(locator)
+        if element:
+            element.click()
+
+    def text(self, locator):
+        element = self.find_element(locator)
+        if element:
+            return element.text
+
+    def quit(self, seconds=0):
+        time.sleep(seconds)
+        self.driver.quit()
 
 
 if __name__ == '__main__':
