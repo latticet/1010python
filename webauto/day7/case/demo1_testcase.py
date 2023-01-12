@@ -6,4 +6,4 @@ class Demo1TestCase(unittest.TestCase):
         print('test01')
 
     def test02(self):
-        print('test02')
+        self.assertTrue(0)
