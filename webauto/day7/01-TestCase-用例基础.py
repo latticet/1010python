@@ -8,7 +8,6 @@ class DemoTestCase(unittest.TestCase):
     def test01(self):
         print('test01')
 
-
     def test03(self):
         print('test03')
 
