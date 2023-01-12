@@ -11,7 +11,7 @@ report_path = os.path.abspath('report')
 file_path = os.path.join(report_path, time.strftime('%Y%m%d%H%M%S') + '-测试报告.html')
 
 with open(file_path, 'wb') as f:
-    # 执行器执行套件
+    # 创建执行器对象
     runner = HTMLTestRunner(
         title='测试报告标题',
         description='测试描述',
