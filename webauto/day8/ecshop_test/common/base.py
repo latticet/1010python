@@ -51,7 +51,8 @@ class Base:
             return WebDriverWait(self.driver, timeout, poll_frequency) \
                 .until(EC.presence_of_element_located(locator), message='单数元素定位失败')
         except TimeoutException as e:
-            print(e)
+            # print(e)
+            pass
 
     def find_elements(self, locator, timeout=5, poll_frequency=0.5):
         """
@@ -65,7 +66,7 @@ class Base:
             return WebDriverWait(self.driver, timeout, poll_frequency) \
                 .until(EC.presence_of_all_elements_located(locator), message='复数元素定位失败')
         except TimeoutException as e:
-            print(e)
+            # print(e)
             return []
 
     def send_keys(self, locator, content):
