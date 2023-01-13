@@ -20,3 +20,9 @@ with open(file_path, 'wb') as f:
     )
     # 执行测试用例
     runner.run(suite)
+
+
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.switch_to.frame()
