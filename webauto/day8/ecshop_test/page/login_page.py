@@ -18,6 +18,7 @@ class LoginPage(Base):
 
 
 if __name__ == '__main__':
+    # 打开浏览器，请求目标网址
     driver = get_driver()
     login_page = LoginPage(driver)
     login_page.get(login_page.login_url)
