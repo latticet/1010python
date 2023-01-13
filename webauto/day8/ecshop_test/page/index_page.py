@@ -9,6 +9,9 @@ class IndexPage(Base):
     def font_text(self):
         return self.text((By.XPATH, '//font[@id="ECS_MEMBERZONE"]/font/font'))
 
+    def a_logout(self):
+        self.click((By.LINK_TEXT, '退出'))
+
 
 if __name__ == '__main__':
     # 打开浏览器，请求目标网址

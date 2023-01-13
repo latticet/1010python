@@ -16,7 +16,8 @@ class DataOperation:
         _, extension = os.path.splitext(filename)
 
         # 构建文件路径
-        file_path = os.path.join(os.path.abspath('data'), filename)
+        project_path = os.path.dirname(os.path.dirname(__file__))
+        file_path = os.path.join(project_path, 'data', filename)
 
         # 读取文件
         if extension == '.csv':
